@@ -1,0 +1,28 @@
+using System;
+
+namespace Lista2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int numeroAnterior = -1;
+            int numero;
+
+            for (int loop = 0; loop < 100; loop++)
+            {
+                do
+                {
+                    numero = r.Next(99);
+                } while (numero == numeroAnterior);
+
+                Console.WriteLine(numero);
+
+                numeroAnterior = numero;
+            }
+
+        }
+    }
+} 
