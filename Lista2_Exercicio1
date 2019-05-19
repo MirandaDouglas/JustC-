@@ -1,0 +1,30 @@
+using System;
+
+
+namespace FirstSteps
+{
+    class EmptyClass
+    {
+        static void Main(string[] args)
+        {
+            int numerador;
+            int multiplicador;
+            int resultado;
+            multiplicador = 1;
+
+
+            Console.Write("Qual tabuada voce deseja saber:  ");
+            numerador = Convert.ToInt32(Console.ReadLine());
+
+            while (multiplicador <= 10)
+            {
+                resultado = (numerador * multiplicador);
+                multiplicador += 1;
+                Console.Write(numerador + "x" + (multiplicador - 1) + " = " + resultado + "\n" );
+            }
+
+            Console.ReadLine();
+
+        }
+    }
+}
