@@ -1,0 +1,70 @@
+using System;
+
+namespace Lista2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Digite um numero: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite um numero: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite um numero: ");
+            int numero3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite um numero: ");
+            int numero4 = Convert.ToInt32(Console.ReadLine());
+
+            int resultado1 = (numero1 % 2);
+            int resultado2 = (numero2 % 2);
+            int resultado3 = (numero3 % 2);
+            int resultado4 = (numero4 % 2);
+
+            int[] numerosPar = {}; 
+
+            if (resultado1 == 0)
+            {
+                numerosPar[0] = numero1;
+            }
+            if (resultado1 != 0)
+            {
+                numerosPar[0] = 0;
+            }
+            if (resultado2 == 0)
+            {
+                numerosPar[1] = numero2;
+            }
+            if (resultado2 != 0)
+            {
+                numerosPar[1] = 0;
+            }
+            if (resultado3 == 0)
+            {
+                numerosPar[2] = numero3;
+            }
+            if (resultado3 != 0)
+            {
+                numerosPar[2] = 0;
+            }
+            if (resultado4 == 0)
+            {
+                numerosPar[3] = numero4;
+            }
+            if (resultado4 != 0)
+            {
+                numerosPar[3] = 0;
+            }
+
+
+            int resultadoTotal = numerosPar[0 + 1 + 2 + 3];
+
+            Console.WriteLine(resultadoTotal);
+            Console.ReadLine();
+
+
+
+        }
+    }
+}
