@@ -1,0 +1,30 @@
+using System;
+
+namespace Lista2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            double numero1;
+            double numero2;
+
+            Console.WriteLine("Digite um numero: ");
+            numero1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite um numero: ");
+            numero2 = Convert.ToDouble(Console.ReadLine());
+
+            double soma = (numero1 + numero2);
+            double produto = (numero1 / numero2);
+            double quociente = (numero1 % numero2);
+
+            Console.WriteLine("A soma destes valores e de: " + soma);
+            Console.WriteLine("O produto destes valores e de: " + produto);
+            Console.WriteLine("O quociente destes valores e de: " + quociente);
+
+            Console.ReadLine();
+
+        }
+    }
+} 
