@@ -1,0 +1,36 @@
+using System;
+
+namespace Desafio1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int valorA = LerNumeroInteiro();
+            int valorB = LerNumeroInteiro();
+            int modulo;
+
+            for (int i = valorA; i > 0; i--)
+            {
+                modulo = (valorA - i) % 10;
+                if (i == valorB && modulo == 0)
+                    {
+                    Console.WriteLine("O valor B esta dentro do Valor A = "+i);
+                    break;
+                    }
+            }
+            
+
+        }
+        static int LerNumeroInteiro()
+        {
+            Console.WriteLine("Entre com o valor inteiro: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            return x;
+
+
+
+        }
+    }
+}
